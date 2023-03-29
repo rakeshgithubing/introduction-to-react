@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://unpkg.com/react@17.0.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.0/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.12.4/babel.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      // javascript code.
+      /*const parentElement = document.getElementById("root");
+      const childElement = document.createElement("h1");
+      childElement.textContent = "Hello World";
+      parentElement.appendChild(childElement);*/
+
+      // react code.
+      /*const element = React.createElement("h1", {
+        children: "HELLO RAHUL SIR", // props
+      });
+      ReactDOM.render(element, document.getElementById("root"));
+      // element-element is a what to render;
+      // root element or parent element-this element is a where to rendering; */
+
+      // embedding expressions.
+      const name = "Rajesh";
+      const greeting = (name) => "Hello" + " " + name;
+      const element = <h1>{greeting(name)}</h1>; // this element is a JSX element to convert a regular javascript.
+      ReactDOM.render(element, document.getElementById("root"));
+    </script>
+  </body>
+</html>
